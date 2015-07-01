@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :name
       t.string :author
       t.text :description
-      t.integer :price
+      t.decimal :price
       t.boolean :availability, default: true
 
       t.timestamps null: false
