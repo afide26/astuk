@@ -5,14 +5,11 @@
     <%= image_tag 'book.jpg', class: 'img img-responsive' %>
   </div>
   <div class="col-md-6">
-    <h3 class="alert alert-info text-center"><%= @book.name %>by:<%= @book.author %></h3>
+    <h3 class="alert alert-success text-center"><%= @book.name %>by:<%= @book.author %></h3>
     <blockquote>
       <p><%= @book.description %></p>
-      <footer>
-        <cite>Pragmatic Books</cite>
-      </footer>
     </blockquote>
-    <h4 class="text-right">$<%= @book.price.to_f/100 %>0</h4>
+    <h4 class="text-right alert alert-success">Price: $<%= @book.price.to_f/100 %>0</h4>
   </div>
 </div>
 
